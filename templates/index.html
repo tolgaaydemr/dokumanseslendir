@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>pdf_Speech</title> 
+    <!--<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='../../assets/bootstrap/css/bootstrap.min.css')}}">-->
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='/Users/taydemir/Desktop/taydemir/Bitirme Tezi/pdf_Speech/documentSpeech/static/assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='../../assets/fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='../../assets/css/styles.min.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
+        <div class="container"><a class="navbar-brand" href="#">DS</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Anasayfa</a></li>
+                </ul>
+                <form class="form-inline mr-auto" target="_self">
+                    <div class="form-group"><label for="search-field"></label><input class="form-control search-field" type="search" id="search-field" name="search"></div>
+                </form><a class="btn btn-light action-button" role="button" href="#" onclick="detay_Alert()">Detay</a></div>
+        </div>
+    </nav>
+    <div class="newsletter-subscribe">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Doküman Seslendir&nbsp;<i class="icon ion-arrow-down-b"></i></h2>
+                <p class="text-center">Dilediğiniz dokümanı sesli olarak dinleyin</p>
+            </div>
+            <form class="form-inline" method="post">
+                <input type="file" name="file_input">
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">OKU&nbsp;<i class="icon ion-volume-high"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://twitter.com/_tolgaaydemir"><i class="icon ion-social-twitter"></i></a>
+        <a href="https://github.com/tolgaaydemr"><i class="icon ion-social-github"></i></a>
+        <a href="https://www.linkedin.com/in/tolgaaydemir/"><i class="icon ion-social-linkedin-outline"></i></a><a href="#"></a>
+    </div>
+    <script src="{{url_for('static', filename='../../assets/js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='../../assets/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script>
+        function detay_Alert(){
+            alert("PROJEDE KULLANILANLAR: \n -Python; Flask \n -Web; Bootstrap, JavaScript \n -Ses Dönüştürme; gTTS");
+        }
+    </script>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+</body>
+</html>
